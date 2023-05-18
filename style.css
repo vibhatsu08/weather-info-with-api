@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --body-background-color: #5E6472;
+
+    --location-input-value-background-color: #555964;
+    --location-input-value-text-color: #F0EDEE;
+
+    --header-background-color: #555964;
+    --header-text-color: #F0EDEE;
+
+    --body-background-color: #555964;
+    --body-text-color: #F0EDEE;
+}
+
+body {
+    background-color: var(--body-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: 1fr 3fr 6fr;
+    width: 50vw;
+    height: 100vh;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#container-form {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    gap: 1rem;
+}
+
+#location-value {
+    background-color: var(--location-input-value-background-color);
+    color: var(--location-input-value-text-color);
+    border: 2px solid #B8F2E6;
+    box-shadow: 0 0 100px 10px rgba(184, 242, 230, 0.5);
+    padding: 1rem;
+    outline: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+#location-submit {
+    background-color: var(--location-input-value-background-color);
+    color: var(--location-input-value-text-color);
+    border: 2px solid #FFA69E;
+    box-shadow: 0 0 100px 10px rgba(255, 166, 158, 0.5);
+    padding: 1rem;
+    outline: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+#container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--header-background-color);
+    border-radius: 1.5rem;
+    border: 2px solid #a1d6de;
+    box-shadow: 0 0 100px 10px rgba(174, 217, 224, 0.5);
+}
+.header-location-name,
+.header-current-temp-celsius,
+.header-current-condition, 
+.header-location-country {
+    color: var(--header-text-color);
+}
+.header-location-name {
+    font-size: 2rem;
+}
+.header-current-temp-celsius {
+    font-size: 5rem;
+}
+
+#container-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.body-current-uv,
+.body-current-wind-kph,
+.body-current-wind-direction,
+.body-current-precipitation-milimeter,
+.body-current-humidity,
+.body-current-is-day,
+.body-current-visibility,
+.body-current-pressure {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--header-text-color);
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--header-background-color);
+    border-radius: 1.5rem;
+    border: 2px solid #fff5d2;
+    box-shadow: 0 0 100px 10px rgba(255, 245, 210, 0.5);
+    
+}
